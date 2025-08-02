@@ -294,6 +294,18 @@
   margin-left: 0;
 }
 
+.job-type {
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFCFA;
+  background-color: #999696;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
 /*section: contatti*/
 .cta {
   display: flex;
