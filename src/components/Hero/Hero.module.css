@@ -1,0 +1,75 @@
+.aboveTheFold {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; /* Adjust spacing if needed */
+}
+
+.foldContainer {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.doubleBotton {
+  margin-top: 30px;
+}
+
+.fotoProfilo {
+  border: 1px solid var(--title-color);
+  border-radius: 300px;
+  width: 100%;
+}
+
+.foldGrid h1 {
+  margin-bottom: 1rem;
+}
+
+/* Tablet */
+@media screen and (max-width: 1025px) and (min-width: 601px) {
+  .foldContainer {
+    flex-direction: row;
+    max-width: 85%;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .foldGrid {
+    width: 58%;
+  }
+
+  .foldImage {
+    width: 38%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fotoProfilo {
+    width: 250px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1026px) {
+  .foldContainer {
+    flex-direction: row;
+    max-width: 1200px;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .foldGrid {
+    width: 63%;
+  }
+
+  .foldImage {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fotoProfilo {
+    width: 350px;
+  }
+}

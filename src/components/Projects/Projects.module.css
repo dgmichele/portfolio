@@ -1,0 +1,111 @@
+.job {
+  display: flex;
+  justify-content: center;
+}
+
+.jobContainer {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.jobGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid var(--title-color);
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+}
+
+.jobGridImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobImg {
+  margin-bottom: 20px;
+  width: 35%;
+}
+
+.jobGridDescription {
+  text-align: center;
+}
+
+.jobType {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--secondary-color);
+  background-color: var(--span-bg);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.jobDescription {
+  margin-bottom: 15px;
+}
+
+.jobButton {
+  margin-left: 0 !important;
+}
+
+/* Tablet */
+@media screen and (max-width: 1025px) and (min-width: 601px) {
+  .jobContainer {
+    flex-direction: row;
+    max-width: 85%;
+    gap: 15px;
+    align-items: stretch;
+    justify-content: start;
+  }
+
+  .jobGrid {
+    width: 48.8%;
+    padding: 25px;
+  }
+
+  .jobImg {
+    margin-bottom: 20px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1026px) {
+  .jobContainer {
+    flex-direction: row;
+    max-width: 1200px;
+    gap: 20px;
+    align-items: stretch;
+    justify-content: start;
+  }
+
+  .jobGrid {
+    flex-direction: row;
+    width: 49.1%;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .jobGridImage {
+    width: 35%;
+    align-items: start;
+  }
+
+  .jobGridDescription {
+    width: 65%;
+    text-align: start;
+  }
+
+  .jobImg {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
