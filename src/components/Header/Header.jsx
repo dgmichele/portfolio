@@ -8,7 +8,7 @@ const Header = () => {
     <header>
       <Navbar fixed="top" expand="xl" className={styles.navbar} collapseOnSelect>
         <Container className={`header-container ${styles.headerContainer}`}>
-          <Navbar.Brand href="/portfolio/" className={styles.logo}>
+          <Navbar.Brand href="/" className={styles.logo}>
             <img src={logo} className={styles.myLogo} alt="logo" />
           </Navbar.Brand>
           <div className={styles.headerMobile}>
